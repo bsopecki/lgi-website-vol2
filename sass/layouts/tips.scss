@@ -1,0 +1,78 @@
+@import "../../vendor/scss-lock/css-lock";
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+@import "../components/text.scss";
+
+.tips {
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*3.5, $gutter_num*10));
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    width: 100%;
+    color: $light;
+  
+    &__header {
+      @include cssLock("padding-top", 360, 1920, ($gutter_num*3.5, $gutter_num*10));
+      @include cssLock("padding-bottom", 360, 1920, ($gutter_num*3.5, $gutter_num*10));
+  
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__title {
+      @extend .title;
+    }
+  
+    &__slogan {
+      @extend .text;
+  
+      @include cssLock("max-width", 360, 1920, ($gutter_num*30, $gutter_num*60));
+      @include cssLock("padding-top", 360, 1920, ($gutter_num*2.5, $gutter_num*5));
+  
+      text-transform: uppercase;
+    }
+  
+    &__chart {
+      @include cssLock("max-width", 360, 1920, ($gutter_num*30, $gutter_num*80));
+      @include cssLock("max-height", 360, 1920, ($gutter_num*22, $gutter_num*45));
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  
+      @include media(xs) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+    }
+  
+    &__desc {
+      @include cssLock("max-width", 360, 1920, ($gutter_num*30, $gutter_num*60));
+  
+      padding-top: $gutter*4;
+  
+      @include media(xs) {
+        padding-top: 0;
+      }
+    }
+  }
+  

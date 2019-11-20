@@ -1,0 +1,89 @@
+@import "../../vendor/scss-lock/css-lock";
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+@import "../components/text.scss";
+
+.solutions {
+    width: 100%;
+  
+    &__wrapper {
+      width: 100%;
+    }
+  
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    &__title {
+      @extend .text;
+  
+      @include cssLock("padding-top", 360, 1920, ($gutter_num*5, $gutter_num*15));
+      @include cssLock("padding-bottom", 360, 1920, ($gutter_num*5, $gutter_num*15));
+  
+      text-transform: uppercase;
+      text-align: center;
+      color: $secondary;
+    }
+  
+    &__stats {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+  
+      @include media(xs) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+  
+    &__icon {
+      @include cssLock("width", 360, 1920, ($gutter_num*12, $gutter_num*22));
+      @include cssLock("height", 360, 1920, ($gutter_num*22, $gutter_num*35));
+    }
+  
+    &__counter {
+      @extend .large;
+  
+      @include cssLock("top", 360, 1920, ($gutter_num*10, $gutter_num*17));
+  
+      position: absolute;
+      color: $secondary;
+    }
+  
+    &__description {
+      @extend .icons;
+  
+      @include cssLock("max-width", 360, 1920, ($gutter_num*10, $gutter_num*20));
+  
+      color: $light;
+    }
+  
+    &__button {
+      @include cssLock("padding-left", 360, 1920, ($gutter_num, $gutter_num*3));
+      @include cssLock("padding-right", 360, 1920, ($gutter_num, $gutter_num*3));
+      @include cssLock("padding-bottom", 360, 1920, ($gutter_num, $gutter_num*1));
+      @include cssLock("padding-top", 360, 1920, ($gutter_num, $gutter_num*1));
+  
+      display: block;
+      background-color: $secondary;
+      max-width: $gutter*19;
+      text-align: center;
+      color: $light;
+      text-transform: uppercase;
+      margin: $gutter*5 auto;
+    }
+  }
+  

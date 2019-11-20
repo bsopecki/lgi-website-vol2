@@ -1,0 +1,43 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: initial;
+  margin: 0 !important;
+  padding: 0;
+  background-color: $primary;
+}
+
+.gmp_map_opts,
+.gmpMapDetailsContainer,
+.gmp_MapPreview {
+  height: 100% !important;
+  min-height: 300px;
+}
+
+xmp {
+  padding: 15px;
+  background: #001d2b;
+  border-radius: 16px;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrap {
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+/* Author: Hugo Giraudel More info: https://css-tricks.com/snippets/sass/strip-unit-function/ Remove the unit of a length @param {Number} $number - Number to remove unit from @return {Number} - Unitless number */
+/*
+$min_prop - min value of property
+$max_prop - max value of property
+$y1 - min width / height of screen
+$y2 - max width / height of screen
+*/
+/* return truth result */
+/** @param $p - property */
+/* default css-lock, work with VW */
+/* css-lock, work with VH */
+/* css-lock, work with percents */
+/** Colors */
+.headline, .title, .slider, .subtitle, .text, .icons, .article, .button, .large { margin: 0; padding: 0; }
+
+.headline { font-size: calc(2.94872vw + 13.38462px)   ; font-weight: 700; font-family: font-family(main); }
+
+.title { font-size: calc(1.92308vw + 13.07692px)   ; letter-spacing: 2px; font-family: font-family(main); }
+
+.title--upper { text-transform: uppercase; }
+
+.slider { font-size: calc(1.66667vw + 8px)   ; font-family: font-family(main); }
+
+.subtitle { font-size: calc(1.41026vw + 8.92308px)   ; font-weight: 600; font-family: font-family(main); letter-spacing: 2px; }
+
+.text { font-size: calc(0.38462vw + 12.61538px)   ; font-weight: 400; font-family: font-family(texts); }
+
+.text--upper { text-transform: uppercase; }
+
+.icons { font-size: calc(0.57692vw + 11.92308px)   ; font-weight: 400; }
+
+.article { font-size: calc(0.0641vw + 13.76923px)   ; font-family: font-family(main); font-weight: 300; }
+
+.button { font-size: calc(0.19231vw + 13.30769px)   ; font-family: font-family(texts); }
+
+.large { font-size: calc(6.41026vw + 26.92308px)   ; font-family: faont-family(main); }

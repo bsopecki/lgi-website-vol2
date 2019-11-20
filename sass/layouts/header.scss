@@ -1,0 +1,80 @@
+@import "../../vendor/scss-lock/css-lock";
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+@import "../components/text.scss";
+
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    &__popup {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $secondary;
+  
+      @include media(xxl) {
+        height: $gutter*6;
+        font-size: $gutter*3;
+      }
+    }
+  
+    &__content {
+      @extend .text;
+  
+      @include cssLock("padding", 360, 1920, ($gutter_num * 1, $gutter_num * 2));
+  
+      margin: 0;
+    }
+  
+    &__button {
+      height: $gutter*3;
+      width: $gutter*7;
+      margin-right: $gutter*4;
+      border: none;
+      border-radius: 10%;
+      background-color: $primary;
+      margin-bottom: $gutter*0.5;
+      margin-top: $gutter*0.5;
+      text-transform: uppercase;
+  
+      @include media(xxl) {
+        width: $gutter*9;
+        height: $gutter*4;
+        font-size: $gutter*2.5;
+      }
+    }
+  
+    &__wrapper {
+      @include cssLock("padding-top", 360, 1920, ($gutter_num * 2, $gutter_num * 5));
+  
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__logo {
+      @include cssLock("max-width", 360, 1920, ($gutter_num * 8, $gutter_num * 20));
+      @include cssLock("max-height", 360, 1920, ($gutter_num * 4, $gutter_num * 9));
+    }
+  
+    .nav {
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .menu-item {
+      @extend .text;
+  
+      @include cssLock("padding-left", 360, 1920, ($gutter_num * 1, $gutter_num * 4));
+  
+      color: $special;
+      text-transform: uppercase;
+      list-style: none;
+    }
+  }

@@ -1,0 +1,15 @@
+@import "../../vendor/scss-lock/css-lock";
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+@import "../components/text.scss";
+
+.map {
+    width: 100%;
+  
+    &__content {
+      @include cssLock("height", 360, 1920, ($gutter_num*30, $gutter_num*115));
+  
+      width: 100%;
+    }
+  }
+  

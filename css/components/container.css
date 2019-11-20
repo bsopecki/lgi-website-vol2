@@ -1,0 +1,10 @@
+/** Colors */
+.container { width: calc(100% - 32px); margin: 0 auto; padding: 0; }
+
+@media (min-width: 992px) { .container { width: calc(100% - 96px); } }
+
+@media (min-width: 1025px) { .container { width: calc(100% - 144px); } }
+
+@media (min-width: 1440px) { .container { width: calc(100% - 240px); } }
+
+@media (min-width: 1921px) { .container { width: calc(100% - 640px); } }
