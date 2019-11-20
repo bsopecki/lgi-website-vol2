@@ -1,0 +1,82 @@
+%text {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headline {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (24, 70));
+  
+    font-weight: 700;
+    font-family: font-family(main);
+  }
+  
+  .title {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (20, 50));
+  
+    letter-spacing: $gutter * 0.25;
+    font-family: font-family(main);
+  
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+  
+  .slider {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 40));
+  
+    font-family: font-family(main);
+  }
+  
+  .subtitle {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 36));
+  
+    font-weight: 600;
+    font-family: font-family(main);
+    letter-spacing: $gutter * 0.25;
+  }
+  
+  .text {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 20));
+  
+    font-weight: 400;
+    font-family: font-family(texts);
+  
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+  
+  .icons {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 23));
+  
+    font-weight: 400;
+  }
+  
+  .article {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 15));
+  
+    font-family: font-family(main);
+    font-weight: 300;
+  }
+  
+  .button {
+    @extend %text;
+  
+    @include cssLock("font-size", 360, 1920, (14, 17));
+  
+    font-family: font-family(texts);
+  }

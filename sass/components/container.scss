@@ -1,0 +1,21 @@
+.container {
+    width: calc(100% - #{$gutter * 4});
+    margin: 0 auto;
+    padding: 0;
+  
+    @include media(md) {
+      width: calc(100% - #{$gutter * 12});
+    }
+  
+    @include media(lg) {
+      width: calc(100% - #{$gutter * 18});
+    }
+  
+    @include media(xl) {
+      width: calc(100% - #{$gutter * 30});
+    }
+  
+    @include media(xxl) {
+      width: calc(100% - #{$gutter * 80});
+    }
+  }
