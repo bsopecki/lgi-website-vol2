@@ -46,7 +46,7 @@
   .text {
     @extend %text;
   
-    @include cssLock("font-size", 360, 1920, (14, 20));
+    @include cssLock("font-size", 360, 1920, (11, 20));
   
     font-weight: 400;
     font-family: font-family(texts);

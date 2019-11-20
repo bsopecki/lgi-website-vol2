@@ -342,11 +342,11 @@ body {
   background-color: #cfcbc8; }
 
 /** Components */
-.headline, .title, .slider, .subtitle, .text, .header__item, .icons, .article, .button, .header__content, .header__link {
+.headline, .hero__title, .title, .slider, .subtitle, .text, .hero__content, .hero__slogan, .header__item, .icons, .article, .button, .header__content, .header__link {
   margin: 0;
   padding: 0; }
 
-.headline {
+.headline, .hero__title {
   font-size: calc(2.94872vw + 13.38462px)   ;
   font-weight: 700;
   font-family: "freight-text-pro"; }
@@ -368,8 +368,8 @@ body {
   font-family: "freight-text-pro";
   letter-spacing: 2px; }
 
-.text, .header__item {
-  font-size: calc(0.38462vw + 12.61538px)   ;
+.text, .hero__content, .hero__slogan, .header__item {
+  font-size: calc(0.57692vw + 8.92308px)   ;
   font-weight: 400;
   font-family: "source-sans-pro"; }
   .text--upper {
@@ -406,6 +406,59 @@ body {
       width: calc(100% - 640px); } }
 
 /** Layouts */
+.hero {
+  width: 100%;
+  background-color: #cfcbc8; }
+  .hero__title {
+    color: #000;
+    font-weight: 400; }
+  .hero__content {
+    margin-top: calc(7.5641vw + 12.76923px)   ;
+    margin-bottom: calc(7.5641vw + 12.76923px)   ;
+    color: #214577; }
+  .hero__slogan {
+    margin-top: calc(2.05128vw + 8.61538px)   ;
+    color: #e2dfdd;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px; }
+  .hero__photo {
+    right: calc(1.02564vw + 0.30769px)   ;
+    top: calc(6.66667vw + 64px)   ;
+    position: absolute;
+    z-index: 2; }
+    @media (min-width: 992px) {
+      .hero__photo {
+        top: 128px; } }
+    @media (min-width: 1025px) {
+      .hero__photo {
+        top: 144px; } }
+    @media (min-width: 1440px) {
+      .hero__photo {
+        top: 160px; } }
+    @media (min-width: 1921px) {
+      .hero__photo {
+        right: 20px;
+        top: 240px; } }
+  .hero__logo {
+    max-width: calc(22.05128vw + 16.61538px)   ;
+    max-height: calc(33.33333vw + 40px)   ; }
+  .hero__wrapper {
+    padding-bottom: calc(7.69231vw + -3.69231px)   ;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    position: relative; }
+  .hero__picture {
+    position: relative; }
+  .hero__icon {
+    max-width: calc(20vw + -24px)   ;
+    max-height: calc(20vw + -24px)   ;
+    left: calc(-3.32821vw + 7.90154px)   ;
+    bottom: calc(-10vw + 16px)   ;
+    position: absolute; }
+
 .header {
   width: 100%;
   display: -ms-flexbox;
