@@ -1,0 +1,26 @@
+/**Vendors**/
+@import "../vendors/scss-lock/css-lock";
+
+/** Common */
+@import "./common/functions";
+@import "./common/mixins.scss";
+@import "./common/variables";
+@import "./common/normalize";
+@import "./common/global";
+
+/** Components */
+@import "./components/text.scss";
+@import "./components/container.scss";
+@import "./components/form.scss";
+@import "./components/map.scss";
+
+/** Layouts */
+@import "./layouts/hero.scss";
+@import "./layouts/about-us.scss";
+@import "./layouts/security.scss";
+@import "./layouts/solutions.scss";
+@import "./layouts/rules.scss";
+@import "./layouts/plans.scss";
+@import "./layouts/tips.scss";
+@import "./layouts/footer";
+@import "./layouts/header.scss";
