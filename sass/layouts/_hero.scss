@@ -1,19 +1,27 @@
-@import "../../vendor/scss-lock/css-lock";
-@import "../common/variables.scss";
-@import "../common/mixins.scss";
-@import "../components/text.scss";
-
 .hero {
     width: 100%;
     background-color: $primary;
   
     &__title {
       @extend .headline;
+
+      @include cssLock("margin-top", 360, 1920, ($gutter_num*5, $gutter_num*12.5));
   
-      color: $dark;
+      color: $secondary;
       font-weight: 400;
     }
   
+    &__slogan {
+      @extend .text;
+
+      @include cssLock("margin-top", 360, 1920, ($gutter_num*3, $gutter_num*6.25));
+      @include cssLock("max-width", 360, 1920, ($gutter_num*24, $gutter_num*65));
+
+      color: $light;
+      letter-spacing: $gutter*0.45;
+      text-transform: uppercase;
+    }
+
     &__content {
       @extend .text;
   
@@ -21,36 +29,36 @@
       @include cssLock("margin-bottom", 360, 1920, ($gutter_num*5, $gutter_num*19.75));
   
       color: $special;
+      letter-spacing: $gutter*0.375;
+      line-height: $gutter*4;
     }
   
     &__photo {
-      @include cssLock("right", 360, 1920, ($gutter_num*0.5, $gutter_num*2.5));
-      @include cssLock("top", 360, 1920, ($gutter_num*11, $gutter_num*24));
+      @include cssLock("right", 360, 1920, ($gutter_num*-1.5, $gutter_num*-6));
+      @include cssLock("top", 360, 1920, ($gutter_num*13, $gutter_num*20));
   
       position: absolute;
       z-index: 2;
   
-      @include media(md) {
-        top: $gutter*16;
-      }
-  
-      @include media(lg) {
-        top: $gutter*18;
-      }
-  
       @include media(xl) {
-        top: $gutter*20;
+        right: $gutter*-6;
+        top: $gutter*10.5;
       }
-  
+
       @include media(xxl) {
-        right: $gutter*2.5;
-        top: $gutter*30;
+        right: $gutter*-9.5;
+        top: $gutter*8;
       }
     }
   
     &__logo {
-      @include cssLock("max-width", 360, 1920, ($gutter_num*12, $gutter_num*55));
-      @include cssLock("max-height", 360, 1920, ($gutter_num*20, $gutter_num*85));
+      @include cssLock("max-width", 360, 1920, ($gutter_num*18, $gutter_num*75));
+      @include cssLock("max-height", 360, 1920, ($gutter_num*32, $gutter_num*100));
+
+      @include media(xxl) {
+        width: $gutter*110;
+        height: $gutter*140;
+      }
     }
   
     &__wrapper {

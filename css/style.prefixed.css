@@ -374,7 +374,6 @@ img {
   width: 100%; }
 
 /** Components */
-/** Colors */
 .container {
   width: calc(100% - 32px);
   margin: 0 auto;
@@ -392,38 +391,17 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .header__content, .button, .form :-ms-input-placeholder, .menu__link, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
+
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .header__content, .button, .form ::placeholder, .menu__link, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
 .headline, .slider__counter, .values__counter, .hero__title {
   font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "freight-text-pro"; }
 
 .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
@@ -443,7 +421,7 @@ $y2 - max width / height of screen
   font-family: "freight-text-pro";
   letter-spacing: 2px; }
 
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
+.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
   font-size: calc(0.38462vw + 12.61538px)   ;
   font-weight: 400;
   font-family: "source-sans-pro"; }
@@ -454,16 +432,16 @@ $y2 - max width / height of screen
   font-size: calc(0.57692vw + 11.92308px)   ;
   font-weight: 400; }
 
-.article {
+.article, .header__content {
   font-size: calc(0.0641vw + 13.76923px)   ;
   font-family: "freight-text-pro";
   font-weight: 300; }
 
-.button, .form :-ms-input-placeholder {
+.button, .form :-ms-input-placeholder, .menu__link {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
-.button, .form ::placeholder {
+.button, .form ::placeholder, .menu__link {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
@@ -472,107 +450,6 @@ $y2 - max width / height of screen
   font-family: faont-family(main); }
 
 /** Blocks */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .form {
   width: 100%; }
   .form__contact {
@@ -621,213 +498,11 @@ $y2 - max width / height of screen
     color: #e2dfdd;
     font-weight: 400; }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .map {
   width: 100%; }
   .map__content {
     height: calc(43.58974vw + 83.07692px)   ;
     width: 100%; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .quote {
   height: calc(38.07692vw + 150.92308px)   ;
@@ -868,107 +543,6 @@ $y2 - max width / height of screen
     background-color: #214577;
     opacity: 0.8;
     width: 100%; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .rules {
   margin-top: calc(8.71795vw + 12.61538px)   ;
@@ -1023,107 +597,6 @@ $y2 - max width / height of screen
       .rules__description {
         font-size: 32px; } }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .slider, .slider__content {
   position: relative;
   opacity: 0.9; }
@@ -1169,107 +642,6 @@ $y2 - max width / height of screen
       .slider__photo {
         height: auto; } }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .values {
   width: calc(25.64103vw + 227.69231px)   ;
   display: -ms-flexbox;
@@ -1309,108 +681,20 @@ $y2 - max width / height of screen
     top: 10%;
     left: 47%; }
 
+.menu {
+  list-style: none; }
+  .menu__link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #214577; }
+    @media (min-width: 1025px) {
+      .menu__link {
+        pointer-events: initial; } }
+    .menu__link:hover {
+      color: #e2dfdd;
+      transition: 0.4s; }
+
 /** Layouts */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .about-us {
   padding-top: calc(4.61538vw + 87.38462px)   ;
   padding-bottom: calc(2.5641vw + 94.76923px)   ; }
@@ -1454,107 +738,6 @@ $y2 - max width / height of screen
       .about-us__description {
         width: 50%; } }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .footer {
   padding-top: calc(4.87179vw + 2.46154px)   ;
   padding-bottom: calc(4.87179vw + 2.46154px)   ;
@@ -1594,114 +777,16 @@ $y2 - max width / height of screen
     width: 100%;
     height: 100%; }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .header {
+  margin-bottom: calc(3.07692vw + 4.92308px)   ;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
   .header__popup {
+    padding-top: calc(0.25641vw + 3.07692px)   ;
+    padding-bottom: calc(0.25641vw + 3.07692px)   ;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -1715,7 +800,16 @@ $y2 - max width / height of screen
         font-size: 24px; } }
   .header__content {
     padding: calc(0.51282vw + 6.15385px)   ;
-    margin: 0; }
+    margin: 0;
+    color: #e2dfdd; }
+  .header__privacy {
+    font-weight: 600; }
+    @media (min-width: 1025px) {
+      .header__privacy {
+        pointer-events: initial; } }
+    .header__privacy:hover {
+      color: #214577;
+      transition: 0.4s; }
   .header__button {
     height: 24px;
     width: 56px;
@@ -1731,6 +825,14 @@ $y2 - max width / height of screen
         width: 72px;
         height: 32px;
         font-size: 20px; } }
+    @media (min-width: 1025px) {
+      .header__button {
+        pointer-events: initial;
+        cursor: pointer; } }
+    .header__button:hover {
+      background-color: #214577;
+      color: #e2dfdd;
+      transition: 0.4s; }
   .header__wrapper {
     padding-top: calc(1.53846vw + 10.46154px)   ;
     width: 100%;
@@ -1757,138 +859,45 @@ $y2 - max width / height of screen
     text-transform: uppercase;
     list-style: none; }
 
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
-
 .hero {
   width: 100%;
   background-color: #cfcbc8; }
   .hero__title {
-    color: #000;
+    margin-top: calc(3.84615vw + 26.15385px)   ;
+    color: #535050;
     font-weight: 400; }
+  .hero__slogan {
+    margin-top: calc(1.66667vw + 18px)   ;
+    max-width: calc(21.02564vw + 116.30769px)   ;
+    color: #e2dfdd;
+    letter-spacing: 3.6px;
+    text-transform: uppercase; }
   .hero__content {
     margin-top: calc(7.5641vw + 12.76923px)   ;
     margin-bottom: calc(7.5641vw + 12.76923px)   ;
-    color: #214577; }
+    color: #214577;
+    letter-spacing: 3px;
+    line-height: 32px; }
   .hero__photo {
-    right: calc(1.02564vw + 0.30769px)   ;
-    top: calc(6.66667vw + 64px)   ;
+    right: calc(-2.30769vw + -3.69231px)   ;
+    top: calc(3.58974vw + 91.07692px)   ;
     position: absolute;
     z-index: 2; }
-    @media (min-width: 992px) {
-      .hero__photo {
-        top: 128px; } }
-    @media (min-width: 1025px) {
-      .hero__photo {
-        top: 144px; } }
     @media (min-width: 1440px) {
       .hero__photo {
-        top: 160px; } }
+        right: -48px;
+        top: 84px; } }
     @media (min-width: 1921px) {
       .hero__photo {
-        right: 20px;
-        top: 240px; } }
+        right: -76px;
+        top: 64px; } }
   .hero__logo {
-    max-width: calc(22.05128vw + 16.61538px)   ;
-    max-height: calc(33.33333vw + 40px)   ; }
+    max-width: calc(29.23077vw + 38.76923px)   ;
+    max-height: calc(34.87179vw + 130.46154px)   ; }
+    @media (min-width: 1921px) {
+      .hero__logo {
+        width: 880px;
+        height: 1120px; } }
   .hero__wrapper {
     padding-bottom: calc(7.69231vw + -3.69231px)   ;
     display: -ms-flexbox;
@@ -1904,107 +913,6 @@ $y2 - max width / height of screen
     left: calc(-3.32821vw + 7.90154px)   ;
     bottom: calc(-10vw + 16px)   ;
     position: absolute; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .plans {
   padding-top: calc(2.05128vw + 8.61538px)   ;
@@ -2032,107 +940,6 @@ $y2 - max width / height of screen
     max-width: calc(1.79487vw + 21.53846px)   ;
     max-height: calc(5.38462vw + 64.61538px)   ;
     margin: 24px auto; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .security__wrapper {
   width: 100%; }
@@ -2170,107 +977,6 @@ $y2 - max width / height of screen
 
 .security__picture {
   margin-top: calc(7.4359vw + 1.23077px)   ; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .solutions {
   width: 100%; }
@@ -2337,107 +1043,6 @@ $y2 - max width / height of screen
     color: #e2dfdd;
     text-transform: uppercase;
     margin: 40px auto; }
-
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-/*
- * Author: Hugo Giraudel
- * More info: https://css-tricks.com/snippets/sass/strip-unit-function/
- *
- * Remove the unit of a length
- * @param {Number} $number - Number to remove unit from
- * @return {Number} - Unitless number
- */
-/*
-$min_prop - min value of property
-$max_prop - max value of property
-$y1 - min width / height of screen
-$y2 - max width / height of screen
-*/
-/* return truth result */
-/**
-* @param $p - property
-* */
-/* default css-lock, work with VW */
-/* css-lock, work with VH */
-/* css-lock, work with percents */
-/** Colors */
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form :-ms-input-placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .button, .form ::placeholder, .large, .solutions__counter {
-  margin: 0;
-  padding: 0; }
-
-.headline, .slider__counter, .values__counter, .hero__title {
-  font-size: calc(2.94872vw + 13.38462px)   ;
-  font-weight: 700;
-  font-family: "freight-text-pro"; }
-
-.title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title {
-  font-size: calc(1.92308vw + 13.07692px)   ;
-  letter-spacing: 2px;
-  font-family: "freight-text-pro"; }
-  .title--upper {
-    text-transform: uppercase; }
-
-.slider, .slider__content {
-  font-size: calc(1.66667vw + 8px)   ;
-  font-family: "freight-text-pro"; }
-
-.subtitle {
-  font-size: calc(1.41026vw + 8.92308px)   ;
-  font-weight: 600;
-  font-family: "freight-text-pro";
-  letter-spacing: 2px; }
-
-.text, .slider__title, .slider__button, .about-us__slogan, .about-us__desc, .footer__data, .header__content, .header .menu-item, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan {
-  font-size: calc(0.38462vw + 12.61538px)   ;
-  font-weight: 400;
-  font-family: "source-sans-pro"; }
-  .text--upper {
-    text-transform: uppercase; }
-
-.icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
-  font-weight: 400; }
-
-.article {
-  font-size: calc(0.0641vw + 13.76923px)   ;
-  font-family: "freight-text-pro";
-  font-weight: 300; }
-
-.button, .form :-ms-input-placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.button, .form ::placeholder {
-  font-size: calc(0.19231vw + 13.30769px)   ;
-  font-family: "source-sans-pro"; }
-
-.large, .solutions__counter {
-  font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
 
 .tips {
   padding-bottom: calc(3.33333vw + 16px)   ;

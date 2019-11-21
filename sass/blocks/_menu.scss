@@ -1,0 +1,20 @@
+.menu {
+   list-style: none;
+
+   &__link {
+       @extend .button;
+
+       text-transform: uppercase;
+       letter-spacing: $gutter*0.125;
+       color: $special;
+
+       @include media(lg) {
+           pointer-events: initial;
+       }
+
+       &:hover {
+           color: $light;
+           transition: $transition;
+       }
+   }
+}
