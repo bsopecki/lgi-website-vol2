@@ -11,7 +11,7 @@
 
     @include cssLock("max-width", 360, 1920, ($gutter_num*50, $gutter_num*150));
 
-    color: $light;
+    color: $slogans;
     margin: 0 auto;
   }
 
