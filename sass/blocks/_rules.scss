@@ -1,66 +1,78 @@
 .rules {
-    @include cssLock("margin-top", 360, 1920, ($gutter_num*5.5, $gutter_num*22.5));
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*4, $gutter_num*15));
-    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*4, $gutter_num*15));
-  
-    background-color: $secondary;
-    text-align: center;
-  
-    &__title {
-      @extend .title;
-  
-      @include cssLock("max-width", 360, 1920, ($gutter_num*50, $gutter_num*150));
-  
-      color: $light;
-      margin: 0 auto;
-    }
-  
-    &__list {
-      @include cssLock("margin-top", 360, 1920, ($gutter_num*3, $gutter_num*8));
-  
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-  
-      @include media(xs) {
-        flex-direction: row;
-        align-items: stretch;
-      }
-    }
-  
-    &__item {
-      @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*2.5));
-  
-      display: flex;
-      flex-direction: column;
-      max-width: 70%;
-      justify-content: center;
-      align-items: center;
-  
-      @include media(xs) {
-        max-width: 30%;
-      }
-    }
-  
-    &__icon {
-      @include cssLock("max-width", 360, 1920, ($gutter_num*10, $gutter_num*22));
-      @include cssLock("max-height", 360, 1920, ($gutter_num*10, $gutter_num*150));
-    }
-  
-    &__description {
-      @extend .icons;
-  
-      @include cssLock("padding-top", 360, 1920, ($gutter_num*3.5, $gutter_num*7.5));
-  
-      color: $light;
-      font-family: font-family(texts);
-      font-weight: 300;
-  
-      @include media(xxl) {
-        font-size: $gutter*4;
-      }
+  @include cssLock("margin-top", 360, 1920, ($gutter_num*5.5, $gutter_num*22.5));
+  @include cssLock("padding-top", 360, 1920, ($gutter_num*4, $gutter_num*15));
+  @include cssLock("padding-bottom", 360, 1920, ($gutter_num*4, $gutter_num*15));
+
+  background-color: $secondary;
+  text-align: center;
+
+  &__title {
+    @extend .title;
+
+    @include cssLock("max-width", 360, 1920, ($gutter_num*50, $gutter_num*150));
+
+    color: $light;
+    margin: 0 auto;
+  }
+
+  &__list {
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*3, $gutter_num*8));
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include media(xs) {
+      flex-direction: row;
+      align-items: stretch;
     }
   }
-  
+
+  &__item {
+    @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*2.5));
+
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+
+    @include media(xs) {
+      max-width: 30%;
+    }
+  }
+
+  &__icon {
+    @include cssLock("max-width", 360, 1920, ($gutter_num*10, $gutter_num*22));
+    @include cssLock("max-height", 360, 1920, ($gutter_num*10, $gutter_num*150));
+  }
+
+  &__description {
+    @extend .icons;
+
+    color: $light;
+    font-family: font-family(texts);
+    font-weight: 300;
+
+    @include media(xxl) {
+      font-size: $gutter*4;
+    }
+
+    &--special {
+      @include cssLock("margin-top", 360, 1920, ($gutter_num*3.5, $gutter_num*7.5));
+    }
+  }
+
+  &__content {
+    @extend .text;
+
+    @include cssLock("max-width", 360, 1920, ($gutter_num*35, $gutter_num*83));
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*5, $gutter_num*19));
+
+    margin-left: auto;
+    margin-right: auto;
+    color: $light;
+  }
+}

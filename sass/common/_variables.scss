@@ -10,13 +10,14 @@ $special: #214577;
 $dark: #000;
 $slider: #666;
 
-$media: (xs: 576px,
-sm: 768px,
-md: 992px,
-lg: 1025px,
-xl: 1440px,
-xxl:1921px);
+$media: (xs: 568px,
+    sm: 768px,
+    md: 992px,
+    lg: 1025px,
+    xl: 1440px,
+    dtp: 1920px,
+    xxl:1921px);
 
 $font-family: (main: "freight-text-pro",
-texts: "source-sans-pro"
+    texts: "source-sans-pro"
 );

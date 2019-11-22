@@ -1,49 +1,68 @@
 .footer {
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*2.5, $gutter_num*12));
-    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2.5, $gutter_num*12));
-  
-    background-color: $secondary;
-    width: 100%;
-    height: auto;
-  
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-  
-      @include media(xs) {
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-    }
-  
-    &__content {
-      @include cssLock("margin-right", 360, 1920, ($gutter_num*5, $gutter_num*25));
-  
-      display: flex;
-      flex-direction: column;
-    }
-  
-    &__adress {
-      @include cssLock("margin-bottom", 360, 1920, ($gutter_num*2, $gutter_num*5));
-    }
-  
-    &__logo {
-      @include cssLock("height", 360, 1920, ($gutter_num*5, $gutter_num*10));
-      @include cssLock("width", 360, 1920, ($gutter_num*11, $gutter_num*22.5));
-      @include cssLock("margin-bottom", 360, 1920, ($gutter_num*2, $gutter_num*5));
-    }
-  
-    &__data {
-      @extend .text;
-  
-      color: $light;
-    }
-  
-    &__form {
-      width: 100%;
-      height: 100%;
+  @include cssLock("padding-top", 360, 1920, ($gutter_num*2.5, $gutter_num*12));
+
+  background-color: $secondary;
+  width: 100%;
+  height: auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include media(xs) {
+      flex-direction: row;
+      justify-content: flex-start;
     }
   }
-  
+
+  &__content {
+    @include cssLock("margin-right", 360, 1920, ($gutter_num*5, $gutter_num*25));
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__adress {
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*2, $gutter_num*5));
+  }
+
+  &__logo {
+    @include cssLock("height", 360, 1920, ($gutter_num*5, $gutter_num*10));
+    @include cssLock("width", 360, 1920, ($gutter_num*11, $gutter_num*22.5));
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*2, $gutter_num*5));
+  }
+
+  &__data {
+    @extend .text;
+
+    color: $light;
+  }
+
+  &__form {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__copyright {
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*6, $gutter_num*15));
+    @include cssLock("padding-top", 360, 1920, ($gutter_num*1.5, $gutter_num*2));
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*1.5, $gutter_num*2));
+
+    background-color: $light;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__authors {
+    @extend .button;
+
+    color: $secondary;
+    letter-spacing: $gutter_num*0.125;
+  }
+}
