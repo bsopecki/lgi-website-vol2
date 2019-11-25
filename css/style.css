@@ -685,7 +685,7 @@ img {
   .slider__content {
     color: #535050;
     letter-spacing: 0.8px;
-    max-width: 75%;
+    max-width: 90%;
     margin: 0 auto; }
   .slider__button {
     padding: calc(0.17949vw + 4.55385px)   ;
