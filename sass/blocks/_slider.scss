@@ -1,71 +1,71 @@
 .slider {
-    position: relative;
-    opacity: 0.9;
-  
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    &__header {
-      @include cssLock("padding-top", 360, 1920, ($gutter_num*4, $gutter_num*15));
-      @include cssLock("padding-bottom", 360, 1920, ($gutter_num*4, $gutter_num*15));
-  
-      text-align: center;
-    }
-  
-    &__title {
-      @extend .text;
-  
-      text-transform: uppercase;
-      color: $slider;
-      font-weight: 700;
-    }
-  
-    .carousel {
-      @include cssLock("margin-bottom", 360, 1920, ($gutter_num*5.5, $gutter_num*29));
-  
-      text-align: center;
-    }
-  
-    &__counter {
-      @extend .headline;
-  
-      color: $slider;
-      margin-bottom: $gutter*3.75;
-    }
-  
-    &__content {
-      @extend .slider;
-  
-      color: $slider;
-      letter-spacing: $gutter*0.125;
-    }
-  
-    &__button {
-      @extend .text;
-  
-      @include cssLock("max-width", 360, 1920, ($gutter_num*38, $gutter_num*45));
-      @include cssLock("padding", 360, 1920, ($gutter_num*0.75, $gutter_num*1));
-  
-      background-color: $secondary;
-      color: $light;
-      border: none;
-      text-transform: uppercase;
-      font-weight: 800;
-      margin: 0 auto;
-    }
-  
-    &__photo {
-      position: absolute;
-      top: 0;
-      z-index: -1;
-      object-fit: cover;
-      height: $gutter*42;
-  
-      @include media(xs) {
-        height: auto;
-      }
+  position: relative;
+  opacity: 0.9;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    @include cssLock("padding-top", 360, 1920, ($gutter_num*4, $gutter_num*15));
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*4, $gutter_num*15));
+
+    text-align: center;
+  }
+
+  &__title {
+    @extend .text;
+
+    text-transform: uppercase;
+    color: $slider;
+    font-weight: 700;
+    letter-spacing: $gutter*0.5;
+  }
+
+  .carousel {
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*5.5, $gutter_num*29));
+
+    text-align: center;
+  }
+
+  &__counter {
+    @extend .headline;
+
+    color: $slider;
+    margin-bottom: $gutter*3.75;
+  }
+
+  &__content {
+    @extend .slider;
+
+    color: $secondary;
+    letter-spacing: $gutter*0.1;
+  }
+
+  &__button {
+    @extend .button;
+
+    @include cssLock("padding", 360, 1920, ($gutter_num*0.75, $gutter_num*1));
+
+    background-color: $secondary;
+    color: $light;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 auto;
+    letter-spacing: $gutter*0.5;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: $gutter*42;
+
+    @include media(xs) {
+      height: auto;
     }
   }
-  
+}

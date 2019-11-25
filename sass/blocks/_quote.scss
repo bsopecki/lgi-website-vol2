@@ -1,55 +1,55 @@
 .quote {
-    @include cssLock("height", 360, 1920, ($gutter_num*36, $gutter_num*110.25));
-  
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    &__image {
-      position: absolute;
-      top: 0;
-      height: inherit;
-    }
-  
-    &__logo {
-      @include cssLock("max-height", 360, 1920, ($gutter_num*17, $gutter_num*35));
-      @include cssLock("max-width", 360, 1920, ($gutter_num*13, $gutter_num*27));
-  
-      position: relative;
-    }
-  
-    &__sentence {
-      @extend .title;
-  
-      @include cssLock("max-width", 360, 1920, ($gutter_num*40, $gutter_num*120));
-  
-      position: relative;
-      color: $light;
-    }
-  
-    &__author {
-      @extend .icons;
-  
-      @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*3));
-  
-      position: relative;
-      color: $light;
-      text-transform: uppercase;
-      font-weight: 400;
-      font-family: font-family(texts);
-    }
-  
-    .overlay {
-      position: absolute;
-      top: 0;
-      height: inherit;
-      background-color: $special;
-      opacity: 0.8;
-      width: 100%;
-    }
+  @include cssLock("height", 360, 1920, ($gutter_num*36, $gutter_num*110.25));
+
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    height: inherit;
+    object-fit: cover;
   }
-  
+
+  &__logo {
+    @include cssLock("max-height", 360, 1920, ($gutter_num*17, $gutter_num*35));
+    @include cssLock("max-width", 360, 1920, ($gutter_num*13, $gutter_num*27));
+
+    position: relative;
+  }
+
+  &__sentence {
+    @extend .title;
+
+    @include cssLock("max-width", 360, 1920, ($gutter_num*40, $gutter_num*120));
+
+    position: relative;
+    color: $light;
+  }
+
+  &__author {
+    @extend .icons;
+
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*3));
+
+    position: relative;
+    color: $light;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: font-family(texts);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    height: inherit;
+    background-color: $special;
+    opacity: 0.8;
+    width: 100%;
+  }
+}

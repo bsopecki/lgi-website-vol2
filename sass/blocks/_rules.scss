@@ -13,6 +13,8 @@
 
     color: $slogans;
     margin: 0 auto;
+    letter-spacing: $gutter*0.125;
+    font-weight: 400;
   }
 
   &__list {
@@ -31,37 +33,37 @@
   }
 
   &__item {
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*2.5));
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*2, $gutter_num*2.5));
+    @include cssLock("max-width", 360, 1920, ($gutter_num*25, $gutter_num*35));
 
     display: flex;
     flex-direction: column;
-    max-width: 70%;
     justify-content: center;
     align-items: center;
+  }
 
-    @include media(xs) {
-      max-width: 30%;
-    }
+  &__wrapper {
+    @include cssLock("width", 360, 1920, ($gutter_num*10, $gutter_num*22));
+    @include cssLock("height", 360, 1920, ($gutter_num*10, $gutter_num*30));
   }
 
   &__icon {
-    @include cssLock("max-width", 360, 1920, ($gutter_num*10, $gutter_num*22));
-    @include cssLock("max-height", 360, 1920, ($gutter_num*10, $gutter_num*150));
+    width: 100%;
+    height: 100%;
   }
 
   &__description {
     @extend .icons;
 
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*4, $gutter_num*1));
+
     color: $light;
     font-family: font-family(texts);
     font-weight: 300;
+    letter-spacing: $gutter*0.125;
 
     @include media(xxl) {
       font-size: $gutter*4;
-    }
-
-    &--special {
-      @include cssLock("margin-top", 360, 1920, ($gutter_num*3.5, $gutter_num*7.5));
     }
   }
 
@@ -74,5 +76,7 @@
     margin-left: auto;
     margin-right: auto;
     color: $light;
+    letter-spacing: $gutter*0.075;
+    font-weight: 400;
   }
 }

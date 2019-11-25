@@ -65,6 +65,7 @@
     @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*3));
 
     color: $light;
+    letter-spacing: $gutter*0.125;
   }
 
   &__button {

@@ -31,6 +31,7 @@
 
     color: $special;
     font-family: font-family(mian);
+    letter-spacing: $gutter*0.125;
   }
 
   &__slogan {
@@ -38,6 +39,7 @@
 
     color: $slogans;
     text-transform: uppercase;
+    letter-spacing: $gutter*0.5;
   }
 
   &__desc {
@@ -45,7 +47,8 @@
 
     margin-top: $gutter*2;
     color: $slider;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: $gutter*0.075;
   }
 
   &__description {
