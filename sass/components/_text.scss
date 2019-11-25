@@ -59,7 +59,7 @@
   .icons {
     @extend %text;
   
-    @include cssLock("font-size", 360, 1920, (14, 23));
+    @include cssLock("font-size", 360, 1920, (14, 24));
   
     font-weight: 400;
   }
@@ -86,6 +86,6 @@
   
     @include cssLock("font-size", 360, 1920, (50, 150));
   
-    font-family: faont-family(main);
+    font-family: font-family(main);
   }
   

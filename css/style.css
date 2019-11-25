@@ -348,6 +348,7 @@ template {
 html,
 body {
   overflow-x: initial;
+  overflow-y: scroll;
   margin: 0 !important;
   padding: 0;
   background-color: #cfcbc8; }
@@ -396,11 +397,11 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
@@ -434,7 +435,7 @@ img {
     text-transform: uppercase; }
 
 .icons, .quote__author, .rules__description, .values__description, .solutions__description {
-  font-size: calc(0.57692vw + 11.92308px)   ;
+  font-size: calc(0.64103vw + 11.69231px)   ;
   font-weight: 400; }
 
 .article, .form__description, .header__content {
@@ -442,17 +443,17 @@ img {
   font-family: "freight-text-pro";
   font-weight: 300; }
 
-.button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors {
+.button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
-.button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors {
+.button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
 .large, .solutions__counter {
   font-size: calc(6.41026vw + 26.92308px)   ;
-  font-family: faont-family(main); }
+  font-family: "freight-text-pro"; }
 
 /** Blocks */
 .form {
@@ -570,6 +571,7 @@ img {
   .quote__logo {
     max-height: calc(9.23077vw + 102.76923px)   ;
     max-width: calc(7.17949vw + 78.15385px)   ;
+    margin-bottom: calc(0.76923vw + 9.23077px)   ;
     position: relative; }
   .quote__sentence {
     max-width: calc(41.02564vw + 172.30769px)   ;
@@ -581,7 +583,8 @@ img {
     color: #e2dfdd;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "source-sans-pro"; }
+    font-family: "source-sans-pro";
+    letter-spacing: 5px; }
   .quote .overlay {
     position: absolute;
     top: 0;
@@ -674,14 +677,18 @@ img {
   .slider .carousel, .slider__content .carousel {
     margin-bottom: calc(12.05128vw + 0.61538px)   ;
     text-align: center; }
+  .slider .carousel-cell, .slider__content .carousel-cell {
+    width: 100%; }
   .slider__counter {
     color: #666;
     margin-bottom: 30px; }
   .slider__content {
     color: #535050;
-    letter-spacing: 0.8px; }
+    letter-spacing: 0.8px;
+    max-width: 75%;
+    margin: 0 auto; }
   .slider__button {
-    padding: calc(0.12821vw + 5.53846px)   ;
+    padding: calc(0.17949vw + 4.55385px)   ;
     background-color: #535050;
     color: #e2dfdd;
     border: none;
@@ -695,7 +702,7 @@ img {
     z-index: -1;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 336px; }
+    height: 100%; }
     @media (min-width: 568px) {
       .slider__photo {
         height: auto; } }
@@ -1101,15 +1108,14 @@ img {
     padding-bottom: calc(5.12821vw + 21.53846px)   ;
     text-transform: uppercase;
     text-align: center;
-    color: #535050; }
+    color: #535050;
+    letter-spacing: 4px; }
   .solutions__stats {
     list-style: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
     height: auto; }
     @media (min-width: 568px) {
       .solutions__stats {
@@ -1119,6 +1125,14 @@ img {
             flex-wrap: wrap;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; } }
+    @media (min-width: 1025px) {
+      .solutions__stats {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
   .solutions__item {
     display: -ms-flexbox;
     display: flex;
@@ -1128,17 +1142,21 @@ img {
         align-items: center;
     position: relative;
     text-align: center; }
+    @media (min-width: 568px) {
+      .solutions__item {
+        width: 50%; } }
   .solutions__icon {
     width: calc(5.12821vw + 77.53846px)   ;
     height: calc(6.66667vw + 152px)   ; }
   .solutions__counter {
     top: calc(3.58974vw + 67.07692px)   ;
     position: absolute;
-    color: #535050; }
+    color: #535050;
+    letter-spacing: 6px; }
   .solutions__description {
-    max-width: calc(5.12821vw + 61.53846px)   ;
+    max-width: calc(2.05128vw + 120.61538px)   ;
     margin-top: calc(0.76923vw + 9.23077px)   ;
-    color: #e2dfdd;
+    color: #f2f2f2;
     letter-spacing: 1px; }
   .solutions__button {
     padding-left: calc(1.02564vw + 4.30769px)   ;
@@ -1151,7 +1169,8 @@ img {
     text-align: center;
     color: #e2dfdd;
     text-transform: uppercase;
-    margin: 40px auto; }
+    margin: 40px auto;
+    letter-spacing: 3px; }
 
 .tips {
   padding-bottom: calc(3.33333vw + 16px)   ;

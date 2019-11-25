@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jjw8kcy.css">
+    <link rel="stylesheet" href="./vendor/flickity-css/flickity.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>ŁGI</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__popup">
+        <div class="header__popup" id="popup">
             <p class="header__content">
-                Strona korzysta z plików cookies w celu realizacji usług zgodnie z <a href="#"
-                    class="header__privacy">Polityką cookies</a>. Możesz określić warunki przechowywania lub dostępu do
+                Strona korzysta z plików cookies w celu realizacji usług zgodnie z
+                 <a href="#"class="header__privacy">Polityką cookies</a>. Możesz określić warunki przechowywania lub dostępu do
                 cookies w Twojej przeglądarce.
             </p>
-            <button class="header__button">Ok</button>
+            <button class="header__button" id="button">Ok</button>
         </div>
         <div class="container">
             <div class="header__wrapper">
                 <img src="images/logo.svg" alt="logo" class="header__logo">
                 <nav class="header__navigation">
                     <ul class="menu">
-                        <li class="menu__item"><a class="menu__link" href="#">kontakt</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#footer">kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -109,8 +111,28 @@
                         <h3 class="slider__content">Inwestując z nami stajesz się wspólnikiem spółki,<br> ktora jest
                             właścicielem nieruchomości</h3>
                     </div>
+                    <div class="carousel-cell">
+                        <p class="slider__counter">2</p>
+                        <h3 class="slider__content">Zainwestowana przez Ciebie kwota zabezpieczona jest wpisem do hipoteki</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <p class="slider__counter">3</p>
+                        <h3 class="slider__content">Umowa spółki gwarantuje sprawne przeprowadzenie inwestycji, a po jej zakończeniu elastyczność w zakresie kontynuowania współpracy</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <p class="slider__counter">4</p>
+                        <h3 class="slider__content">Odradzamy inwestycji opartych na kredycie – dbamy o Twoje bezpieczeństwo finansowe. Unikamy zbyt dużego lewarowania, preferujemy stabilny wzrost od ryzykownego, zalecamy inwestycje ograniczone do nadwyżki kapitału.</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <p class="slider__counter">5</p>
+                        <h3 class="slider__content">Wyższy próg wejścia umożliwia ograniczenie grona wspólników do dojrzałych inwestorów z rozważnym podejściem do pieniędzy. Dzięki takiej strukturze i regularnym spotkaniom masz wpływ na kluczowe decyzje dotyczące nieruchomości. My wyznaczamy kierunek, inwestorzy wybierają drogę.</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <p class="slider__counter">6</p>
+                        <h3 class="slider__content">Inwestor jako współudziałowiec zachowuje kontrolę nad spółką. Przynajmniej raz w roku z innymi inwestorami podejmuje decyzje dotyczące kierunków rozwoju spółki celowej. Możliwe podjęcie decyzji o zakończeniu inwestycji i sprzedaży poszczególnych mieszkań należących do nieruchomości.</h3>
+                    </div>
                 </div>
-                <button class="slider__button">zapraszamy do współpracy</button>
+                <button class="slider__button"><a href="#footer">zapraszamy do współpracy</a></button>
             </div>
         </div>
         <div class="rules">
@@ -150,28 +172,28 @@
                 <div class="solutions__box">
                     <h2 class="solutions__title">inwestuj w sprawdzone rozwiązania.<br>Nasze statystyki:</h2>
                     <ul class="solutions__stats">
-                        <li class="solutions__item">
+                        <li class="solutions__item" data-aos="fade-right">
                             <img src="images/Group123.svg" alt="" class="solutions__icon">
                             <p class="solutions__counter">8</p>
                             <p class="solutions__description">wyremontowanych kamienic</p>
                         </li>
-                        <li class="solutions__item">
+                        <li class="solutions__item" data-aos="fade-right">
                             <img src="images/Group121.svg" alt="" class="solutions__icon">
                             <p class="solutions__counter">22</p>
                             <p class="solutions__description">lokale oddane do użytkowania</p>
                         </li>
-                        <li class="solutions__item">
+                        <li class="solutions__item" data-aos="fade-left">
                             <img src="images/Group118.svg" alt="" class="solutions__icon">
                             <p class="solutions__counter">18,5</p>
                             <p class="solutions__description">miliona dotychczasowej kwoty inwestycji</p>
                         </li>
-                        <li class="solutions__item">
+                        <li class="solutions__item" data-aos="fade-left">
                             <img src="images/Group127.svg" alt="" class="solutions__icon">
                             <p class="solutions__counter">70</p>
                             <p class="solutions__description">inwestorów, którzy do tej pory nam zaufali</p>
                         </li>
                     </ul>
-                    <a href="#" class="solutions__button">pytania?</a>
+                    <a href="#footer" class="solutions__button" data-aos="fade-down">pytania?</a>
                 </div>
             </div>
             <div class="quote">
@@ -192,47 +214,47 @@
                     <p class="plans__slogan">Zależy nam na długotrwałych relacjach opartych na twardych fundamentach</p>
                 </header>
                 <article class="plans__content">
-                    <img src="images/icons/Group83.svg" alt="arrow" class="plans__arrow">
+                    <img src="images/icons/Group83.svg" alt="arrow" class="plans__arrow" data-aos="fade-up">
                     <ul class="values">
-                        <li class="values__item">
+                        <li class="values__item" data-aos="fade-up">
                             <img src="images/icons/Group51.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">1</p>
                             <p class="values__description">Starannie dobrane inwestycje</p>
                         </li>
-                        <li class="values__item values__item--reverse">
+                        <li class="values__item values__item--reverse" data-aos="fade-up">
                             <img src="images/icons/Group82.svg" alt="value icon"
                                 class="values__logo values__logo--special">
                             <p class="values__counter">2</p>
                             <p class="values__description">Analiza ryzyka</p>
                         </li>
-                        <li class="values__item">
+                        <li class="values__item" data-aos="fade-up">
                             <img src="images/icons/Group53.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">3</p>
                             <p class="values__description">Analizy prawno-finansowe</p>
                         </li>
-                        <li class="values__item values__item--reverse">
+                        <li class="values__item values__item--reverse" data-aos="fade-up">
                             <img src="images/icons/Group56.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">4</p>
                             <p class="values__description">Przygotowanie karty informacyjnej dotyczącej poszczególnej
                                 inwestycji</p>
                         </li>
-                        <li class="values__item">
+                        <li class="values__item" data-aos="fade-up">
                             <img src="images/icons/Group63.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">5</p>
                             <p class="values__description">Indywidualne spotkania</p>
                         </li>
-                        <li class="values__item values__item--reverse">
+                        <li class="values__item values__item--reverse" data-aos="fade-up">
                             <img src="images/icons/Group76.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">6</p>
                             <p class="values__description">Zaproszenie do grupy zaufanych inwestrów ŁGI (na podstawie
                                 indywidualnych spotkań starannie dobieramy kontrachentów)</p>
                         </li>
-                        <li class="values__item ">
+                        <li class="values__item" data-aos="fade-up">
                             <img src="images/icons/Group77.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">7</p>
                             <p class="values__description">Realizacja inwestycji</p>
                         </li>
-                        <li class="values__item values__item--reverse">
+                        <li class="values__item values__item--reverse" data-aos="fade-up">
                             <img src="images/icons/Group79.svg" alt="value icon" class="values__logo">
                             <p class="values__counter">8</p>
                             <p class="values__description">Ponadprzeciętny zwrot z inwestycji</p>
@@ -271,7 +293,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158004.00064192925!2d19.340510166625265!3d51.77303465996899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb24754556af%3A0xcb7cae639b21dbac!2zxYHDs2TFug!5e0!3m2!1spl!2spl!4v1574152743438!5m2!1spl!2spl"
             frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <section class="footer__wrapper">
                 <article class="footer__content">
@@ -332,6 +354,10 @@
             </div>
         </section>
     </footer>
+    <script src="./vendor/flickity-min-js/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>AOS.init()</script>
 </body>
 
 </html>

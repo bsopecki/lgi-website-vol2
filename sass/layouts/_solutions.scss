@@ -20,19 +20,25 @@
     text-transform: uppercase;
     text-align: center;
     color: $secondary;
+    letter-spacing: $gutter*0.5;
   }
 
   &__stats {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: auto;
 
     @include media(xs) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+    }
+
+    @include media(lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
     }
   }
 
@@ -42,6 +48,10 @@
     align-items: center;
     position: relative;
     text-align: center;
+
+    @include media(xs) {
+      width: 50%;
+    }
   }
 
   &__icon {
@@ -56,19 +66,22 @@
 
     position: absolute;
     color: $secondary;
+    letter-spacing: $gutter*0.75;
   }
 
   &__description {
     @extend .icons;
 
-    @include cssLock("max-width", 360, 1920, ($gutter_num*10, $gutter_num*20));
+    @include cssLock("max-width", 360, 1920, ($gutter_num*16, $gutter_num*20));
     @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*3));
 
-    color: $light;
+    color: $slogans;
     letter-spacing: $gutter*0.125;
   }
 
   &__button {
+    @extend .button;
+
     @include cssLock("padding-left", 360, 1920, ($gutter_num, $gutter_num*3));
     @include cssLock("padding-right", 360, 1920, ($gutter_num, $gutter_num*3));
     @include cssLock("padding-bottom", 360, 1920, ($gutter_num, $gutter_num*1));
@@ -81,5 +94,6 @@
     color: $light;
     text-transform: uppercase;
     margin: $gutter*5 auto;
+    letter-spacing: $gutter*0.375;
   }
 }

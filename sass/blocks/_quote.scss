@@ -19,6 +19,7 @@
   &__logo {
     @include cssLock("max-height", 360, 1920, ($gutter_num*17, $gutter_num*35));
     @include cssLock("max-width", 360, 1920, ($gutter_num*13, $gutter_num*27));
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*1.5, $gutter_num*3));
 
     position: relative;
   }
@@ -42,6 +43,7 @@
     text-transform: uppercase;
     font-weight: 400;
     font-family: font-family(texts);
+    letter-spacing: $gutter*0.625;
   }
 
   .overlay {
