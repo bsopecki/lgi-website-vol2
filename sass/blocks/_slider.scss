@@ -74,4 +74,9 @@
       height: auto;
     }
   }
+
+  .flickity-page-dots {
+    @include cssLock("bottom", 360, 1920, ($gutter_num*-4, $gutter_num*-12));
+    position: absolute;
+  }
 }

@@ -706,6 +706,9 @@ img {
     @media (min-width: 568px) {
       .slider__photo {
         height: auto; } }
+  .slider .flickity-page-dots, .slider__content .flickity-page-dots {
+    bottom: calc(-4.10256vw + -17.23077px)   ;
+    position: absolute; }
 
 .values {
   width: calc(25.64103vw + 227.69231px)   ;
