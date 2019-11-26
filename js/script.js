@@ -12,5 +12,5 @@ var element = document.querySelector('.carousel');
      pageDots: true,
      hash: true,
      draggable: true,
-     prevNextButtons: false
+     prevNextButtons: true
  });

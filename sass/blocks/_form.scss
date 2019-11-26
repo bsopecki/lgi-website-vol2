@@ -108,5 +108,11 @@
     border: none;
     border-radius: $gutter*0.375;
     letter-spacing: $gutter*0.375;
+
+    &:hover {
+      background-color: $special;
+      color: $light;
+      transition: $transition*1.2;
+    }
   }
 }

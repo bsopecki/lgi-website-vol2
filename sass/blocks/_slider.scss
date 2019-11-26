@@ -85,4 +85,19 @@
     @include cssLock("bottom", 360, 1920, ($gutter_num*-4, $gutter_num*-12));
     position: absolute;
   }
+
+  .flickity-prev-next-button.previous {
+    left: $gutter*-4.5;
+  }
+  .flickity-prev-next-button.next {
+    right: $gutter*-4.5;
+  }
+
+  .flickity-prev-next-button {
+    display: none;
+
+    @include media(md) {
+      display: block;
+    }
+  }
 }

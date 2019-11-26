@@ -6,9 +6,6 @@
   flex-direction: column;
 
   &__popup {
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*0.5, $gutter_num * 1));
-    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*0.5, $gutter_num * 1));
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,6 +25,7 @@
     margin: 0;
     color: $light;
     letter-spacing: $gutter*0.0875;
+    font-family: font-family(texts);
   }
 
   &__privacy {
