@@ -78,11 +78,12 @@
   &__checkbox {
     width: $gutter*4;
     height: $gutter*4;
+    position: relative;
   }
 
   &__text {
     @include cssLock("max-width", 360, 1920, ($gutter_num*36, $gutter_num*59));
-    @include cssLock("margin-left", 360, 1920, ($gutter_num*3, $gutter_num*9));
+    @include cssLock("margin-left", 360, 1920, ($gutter_num*3, $gutter_num*6));
   }
 
   &__description {

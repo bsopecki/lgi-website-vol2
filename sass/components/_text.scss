@@ -62,6 +62,7 @@
     @include cssLock("font-size", 360, 1920, (14, 24));
   
     font-weight: 400;
+    font-family: font-family(texts);
   }
   
   .article {

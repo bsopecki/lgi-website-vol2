@@ -1,5 +1,5 @@
 .quote {
-  @include cssLock("height", 360, 1920, ($gutter_num*36, $gutter_num*110.25));
+  @include cssLock("height", 360, 1920, ($gutter_num*50, $gutter_num*110.25));
 
   width: 100%;
   position: relative;

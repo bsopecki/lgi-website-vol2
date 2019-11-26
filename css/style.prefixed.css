@@ -350,7 +350,8 @@ body {
   overflow-x: hidden;
   margin: 0 !important;
   padding: 0;
-  background-color: #cfcbc8; }
+  background-color: #cfcbc8;
+  line-height: 1.5; }
 
 .gmp_map_opts,
 .gmpMapDetailsContainer,
@@ -396,11 +397,11 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
@@ -435,18 +436,19 @@ img {
 
 .icons, .quote__author, .rules__description, .values__description, .solutions__description {
   font-size: calc(0.64103vw + 11.69231px)   ;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: "source-sans-pro"; }
 
 .article, .form__description, .header__content {
   font-size: calc(0.0641vw + 13.76923px)   ;
   font-family: "freight-text-pro";
   font-weight: 300; }
 
-.button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
+.button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
-.button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
+.button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
@@ -527,10 +529,11 @@ img {
     width: 100%; }
   .form__checkbox {
     width: 32px;
-    height: 32px; }
+    height: 32px;
+    position: relative; }
   .form__text {
     max-width: calc(11.79487vw + 245.53846px)   ;
-    margin-left: calc(3.07692vw + 12.92308px)   ; }
+    margin-left: calc(1.53846vw + 18.46154px)   ; }
   .form__description {
     margin-bottom: calc(0.25641vw + 11.07692px)   ;
     font-family: "source-sans-pro";
@@ -556,7 +559,7 @@ img {
   width: 100%; }
 
 .quote {
-  height: calc(38.07692vw + 150.92308px)   ;
+  height: calc(30.89744vw + 288.76923px)   ;
   width: 100%;
   position: relative;
   display: -ms-flexbox;
@@ -694,12 +697,14 @@ img {
     max-width: 90%;
     margin: 0 auto; }
   .slider__button {
-    padding: calc(0.17949vw + 4.55385px)   ;
+    padding-top: calc(0.17949vw + 4.55385px)   ;
+    padding-bottom: calc(0.17949vw + 4.55385px)   ;
+    padding-left: calc(0.69231vw + 2.70769px)   ;
+    padding-right: calc(0.69231vw + 2.70769px)   ;
     background-color: #535050;
     color: #e2dfdd;
     border: none;
     text-transform: uppercase;
-    font-weight: 800;
     margin: 0 auto;
     letter-spacing: 4px; }
     .slider__button:hover {
@@ -930,7 +935,9 @@ img {
     background-color: #cfcbc8;
     margin-bottom: 4px;
     margin-top: 4px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-left: 6px;
+    padding-right: 6px; }
     @media (min-width: 1921px) {
       .header__button {
         width: 72px;
@@ -991,13 +998,13 @@ img {
     letter-spacing: 4px;
     line-height: 32px; }
   .hero__photo {
-    right: calc(8.57143vw + -38.85714px)   ;
-    top: calc(22.85714vw + 45.71429px)   ;
+    right: calc(7.5vw + -32px)   ;
+    top: calc(15vw + 128px)   ;
     position: absolute;
     z-index: 2; }
     @media (min-width: 768px) {
       .hero__photo {
-        top: 88px; } }
+        top: 136px; } }
     @media (min-width: 992px) {
       .hero__photo {
         top: 88px;
@@ -1023,7 +1030,7 @@ img {
         right: -76px;
         top: 16px; } }
   .hero__logo {
-    width: calc(8.57143vw + 97.14286px)   ;
+    width: calc(17.5vw + 40px)   ;
     height: auto; }
     @media (min-width: 768px) {
       .hero__logo {

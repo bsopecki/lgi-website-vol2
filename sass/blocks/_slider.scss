@@ -52,13 +52,15 @@
   &__button {
     @extend .button;
 
-    @include cssLock("padding", 360, 1920, ($gutter_num*0.65, $gutter_num*1));
+    @include cssLock("padding-top", 360, 1920, ($gutter_num*0.65, $gutter_num*1));
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*0.65, $gutter_num*1));
+    @include cssLock("padding-left", 360, 1920, ($gutter_num*0.65, $gutter_num*2));
+    @include cssLock("padding-right", 360, 1920, ($gutter_num*0.65, $gutter_num*2));
 
     background-color: $secondary;
     color: $light;
     border: none;
     text-transform: uppercase;
-    font-weight: 800;
     margin: 0 auto;
     letter-spacing: $gutter*0.5;
 

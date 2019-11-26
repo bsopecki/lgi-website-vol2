@@ -43,6 +43,8 @@
   }
 
   &__button {
+    @extend .button;
+
     height: $gutter*3;
     width: $gutter*7;
     margin-right: $gutter*4;
@@ -52,6 +54,8 @@
     margin-bottom: $gutter*0.5;
     margin-top: $gutter*0.5;
     text-transform: uppercase;
+    padding-left: $gutter*0.75;
+    padding-right: $gutter*0.75;
 
     @include media(xxl) {
       width: $gutter*9;
