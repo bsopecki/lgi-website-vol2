@@ -396,11 +396,11 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .contact__text, .form__description, .header__content, .button, .contact__button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .contact__text, .form__description, .header__content, .button, .contact__button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
@@ -437,64 +437,22 @@ img {
   font-size: calc(0.64103vw + 11.69231px)   ;
   font-weight: 400; }
 
-.article, .contact__text, .form__description, .header__content {
+.article, .form__description, .header__content {
   font-size: calc(0.0641vw + 13.76923px)   ;
   font-family: "freight-text-pro";
   font-weight: 300; }
 
-.button, .contact__button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
+.button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
-.button, .contact__button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
+.button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .solutions__button {
   font-size: calc(0.19231vw + 13.30769px)   ;
   font-family: "source-sans-pro"; }
 
 .large, .solutions__counter {
   font-size: calc(6.41026vw + 26.92308px)   ;
   font-family: "freight-text-pro"; }
-
-.contact {
-  width: calc(6.25vw + 72px)   ;
-  height: calc(6.25vw + 144px)   ;
-  top: calc(-3.75vw + 8px)   ;
-  right: calc(-12.5vw + 112px)   ;
-  position: absolute;
-  background-color: #214577;
-  z-index: 2; }
-  .contact__wrapper {
-    height: 100%;
-    width: 100%; }
-  .contact__content {
-    position: relative;
-    width: inherit;
-    height: inherit;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    text-align: center; }
-  .contact__text {
-    padding-top: calc(1.25vw + 0px)   ;
-    padding-bottom: calc(1.25vw + 0px)   ;
-    color: #e2dfdd;
-    letter-spacing: 0.6px;
-    max-width: 70%;
-    font-family: "source-sans-pro"; }
-  .contact__button {
-    padding-top: calc(0.3125vw + 2px)   ;
-    padding-bottom: calc(0.3125vw + 2px)   ;
-    padding-left: calc(0.625vw + 16px)   ;
-    padding-right: calc(0.625vw + 16px)   ;
-    border-radius: 3px;
-    border: none;
-    text-transform: uppercase;
-    color: #214577;
-    letter-spacing: 3px; }
 
 /** Blocks */
 .form {
