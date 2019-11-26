@@ -1,6 +1,4 @@
 .map {
-    width: 100%;
-  
     &__content {
       @include cssLock("height", 360, 1920, ($gutter_num*30, $gutter_num*80));
   

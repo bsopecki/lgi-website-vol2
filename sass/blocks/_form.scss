@@ -105,5 +105,8 @@
     background-color: $light;
     color: $secondary;
     font-weight: 800;
+    border: none;
+    border-radius: $gutter*0.375;
+    letter-spacing: $gutter*0.375;
   }
 }

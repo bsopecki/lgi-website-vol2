@@ -66,4 +66,11 @@
     color: $secondary;
     letter-spacing: $gutter_num*0.125;
   }
+
+  &__link {
+    &:hover {
+      color: $special;
+      transition: $transition;
+    }
+  }
 }

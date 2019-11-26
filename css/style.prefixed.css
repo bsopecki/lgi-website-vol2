@@ -347,7 +347,7 @@ template {
 
 html,
 body {
-  overflow-x: initial;
+  overflow-x: hidden;
   margin: 0 !important;
   padding: 0;
   background-color: #cfcbc8; }
@@ -542,13 +542,14 @@ img {
     height: 48px;
     background-color: #e2dfdd;
     color: #535050;
-    font-weight: 800; }
+    font-weight: 800;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px; }
 
-.map {
+.map__content {
+  height: calc(25.64103vw + 147.69231px)   ;
   width: 100%; }
-  .map__content {
-    height: calc(25.64103vw + 147.69231px)   ;
-    width: 100%; }
 
 .quote {
   height: calc(38.07692vw + 150.92308px)   ;
@@ -869,6 +870,9 @@ img {
   .footer__authors {
     color: #535050;
     letter-spacing: 1; }
+  .footer__link:hover {
+    color: #214577;
+    transition: 0.4s; }
 
 .header {
   margin-bottom: calc(3.07692vw + 4.92308px)   ;
@@ -1189,6 +1193,7 @@ img {
       transition: 0.4s; }
   .solutions__image {
     max-width: 1920px;
+    width: 100%;
     height: auto; }
 
 .tips {
