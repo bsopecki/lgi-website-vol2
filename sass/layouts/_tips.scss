@@ -19,19 +19,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   &__title {
     @extend .title;
+
+    letter-spacing: $gutter*0.125;
   }
 
   &__slogan {
     @extend .text;
 
-    @include cssLock("max-width", 360, 1920, ($gutter_num*30, $gutter_num*60));
+    @include cssLock("max-width", 360, 1920, ($gutter_num*35, $gutter_num*75));
     @include cssLock("padding-top", 360, 1920, ($gutter_num*2.5, $gutter_num*5));
 
     text-transform: uppercase;
+    letter-spacing: $gutter*0.5;
   }
 
   &__chart {
@@ -61,9 +65,12 @@
   }
 
   &__desc {
+    @extend .text;
+
     @include cssLock("max-width", 360, 1920, ($gutter_num*27, $gutter_num*60));
 
     padding-top: $gutter*4;
+    letter-spacing: $gutter*0.075;
 
     @include media(xs) {
       padding-top: 0;

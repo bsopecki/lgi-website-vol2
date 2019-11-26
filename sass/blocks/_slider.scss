@@ -61,6 +61,12 @@
     font-weight: 800;
     margin: 0 auto;
     letter-spacing: $gutter*0.5;
+
+    &:hover {
+      background-color: $special;
+      color: $slogans;
+      transition: $transition;
+    }
   }
 
   &__photo {

@@ -95,5 +95,11 @@
     text-transform: uppercase;
     margin: $gutter*5 auto;
     letter-spacing: $gutter*0.375;
+
+    &:hover {
+      background-color: $special;
+      color: $slogans;
+      transition: $transition;
+    }
   }
 }

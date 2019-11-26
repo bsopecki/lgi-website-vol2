@@ -1,0 +1,53 @@
+.contact {
+    @include cssLock("width", 1280, 1920, ($gutter_num*19, $gutter_num*24));
+    @include cssLock("height", 1280, 1920, ($gutter_num*28, $gutter_num*33));
+    @include cssLock("top", 1280, 1920, ($gutter_num*-5, $gutter_num*-8));
+    @include cssLock("right", 1280, 1920, ($gutter_num*-6, $gutter_num*-16));
+
+    position: absolute;
+    background-color: $special;
+    z-index: 2;
+
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__content {
+        position: relative;
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    &__text {
+        @extend .article;
+
+        @include cssLock("padding-top", 1280, 1920, ($gutter_num*2, $gutter_num*3));
+        @include cssLock("padding-bottom", 1280, 1920, ($gutter_num*2, $gutter_num*3));
+
+        color: $light;
+        letter-spacing: $gutter*0.075;
+        max-width: 70%;
+        font-family: font-family(texts);
+    }
+
+    &__button {
+        @extend .button;
+
+        @include cssLock("padding-top", 1280, 1920, ($gutter_num*0.75, $gutter_num*1));
+        @include cssLock("padding-bottom", 1280, 1920, ($gutter_num*0.75, $gutter_num*1));
+        @include cssLock("padding-left", 1280, 1920, ($gutter_num*3, $gutter_num*3.5));
+        @include cssLock("padding-right", 1280, 1920, ($gutter_num*3, $gutter_num*3.5));
+
+        border-radius: $gutter*0.375;
+        border: none;
+        text-transform: uppercase;
+        color: $special;
+        letter-spacing: $gutter*0.375;
+    }
+}

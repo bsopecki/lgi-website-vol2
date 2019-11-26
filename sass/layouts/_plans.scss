@@ -1,42 +1,43 @@
 .plans {
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*6));
-    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*6));
-  
-    &__wrapper {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    &__header {
-      @include cssLock("max-width", 360, 1920, ($gutter_num*40, $gutter_num*90));
-      @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*6));
-  
-      text-align: center;
-    }
-  
-    &__title {
-      @extend .title;
-  
-      @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*4));
-  
-      color: $special;
-    }
-  
-    &__slogan {
-      @extend .text;
-  
-      color: $secondary;
-      text-transform: uppercase;
-    }
-  
-    &__arrow {
-      @include cssLock("max-width", 360, 1920, ($gutter_num*3.5, $gutter_num*7));
-      @include cssLock("max-height", 360, 1920, ($gutter_num*10.5, $gutter_num*21));
-  
-      margin: $gutter*3 auto;
-    }
+  @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*6));
+  @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*6));
+
+  &__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  &__header {
+    @include cssLock("max-width", 360, 1920, ($gutter_num*40, $gutter_num*90));
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*6));
+
+    text-align: center;
+  }
+
+  &__title {
+    @extend .title;
+
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*2, $gutter_num*4));
+
+    color: $special;
+    letter-spacing: $gutter*0.125;
+  }
+
+  &__slogan {
+    @extend .text;
+
+    color: $secondary;
+    text-transform: uppercase;
+    letter-spacing: $gutter*0.5;
+  }
+
+  &__arrow {
+    @include cssLock("max-width", 360, 1920, ($gutter_num*3.5, $gutter_num*7));
+    @include cssLock("max-height", 360, 1920, ($gutter_num*10.5, $gutter_num*21));
+
+    margin: $gutter*3 auto;
+  }
+}

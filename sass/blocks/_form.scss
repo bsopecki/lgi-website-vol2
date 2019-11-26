@@ -15,6 +15,7 @@
   &__desc {
     @include cssLock("height", 360, 1920, ($gutter_num*4, $gutter_num*7.5));
     @include cssLock("max-width", 360, 1920, ($gutter_num*61.75, $gutter_num*85));
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*2.5, $gutter_num*3));
 
     background-color: $secondary;
     border-left: none;
@@ -36,7 +37,7 @@
   }
 
   &__content {
-    @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*2));
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*2.5, $gutter_num*3));
     @include cssLock("height", 360, 1920, ($gutter_num*4, $gutter_num*7.5));
 
     background-color: $secondary;
@@ -91,6 +92,7 @@
 
     font-family: font-family(texts);
     color: $light;
+    letter-spacing: $gutter*0.075;
   }
 
   &__button {

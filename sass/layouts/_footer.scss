@@ -38,6 +38,7 @@
     @extend .text;
 
     color: $light;
+    letter-spacing: $gutter*0.075;
   }
 
   &__form {
