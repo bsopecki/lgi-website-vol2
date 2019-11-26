@@ -102,4 +102,9 @@
       transition: $transition;
     }
   }
+
+  &__image {
+    max-width: $gutter*240;
+    height: auto;
+  }
 }

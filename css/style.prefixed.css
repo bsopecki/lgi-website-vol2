@@ -1187,6 +1187,9 @@ img {
       background-color: #214577;
       color: #f2f2f2;
       transition: 0.4s; }
+  .solutions__image {
+    max-width: 1920px;
+    height: auto; }
 
 .tips {
   padding-bottom: calc(3.33333vw + 16px)   ;
