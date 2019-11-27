@@ -499,6 +499,8 @@ img {
     border-top: none;
     border-bottom: 2px solid #e2dfdd;
     width: 100%; }
+    .form__content--special {
+      height: calc(3.58974vw + 51.07692px)   ; }
   .form :-ms-input-placeholder {
     color: #e2dfdd;
     font-weight: 400; }

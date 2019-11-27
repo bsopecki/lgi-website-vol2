@@ -46,6 +46,10 @@
     border-top: none;
     border-bottom: $gutter*0.25 solid $light;
     width: 100%;
+
+    &--special {
+      @include cssLock("height", 360, 1920, ($gutter_num*8, $gutter_num*15));
+    }
   }
 
   ::placeholder {
