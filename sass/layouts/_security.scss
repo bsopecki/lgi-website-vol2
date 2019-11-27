@@ -10,11 +10,11 @@
   }
 
   &__content {
-    @include cssLock("margin-left", 360, 1920, ($gutter_num*3, $gutter_num*10));
+    @include cssLock("margin-left", 360, 1920, ($gutter_num*7, $gutter_num*10));
 
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
   }
 
   &__image {
@@ -41,9 +41,10 @@
     color: $slogans;
     text-transform: uppercase;
     letter-spacing: $gutter*0.5;
+    line-height: 1.3;
   }
 
   &__picture {
-    @include cssLock("margin-top", 360, 1920, ($gutter_num*3.5, $gutter_num*18));
+    @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*18));
   }
 }

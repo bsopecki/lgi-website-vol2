@@ -75,10 +75,15 @@
     width: 100%;
   }
 
+
   &__checkbox {
     width: $gutter*4;
     height: $gutter*4;
-    position: relative;
+    background-color: $secondary;
+
+    &:checked {
+      color: $light;
+    }
   }
 
   &__text {

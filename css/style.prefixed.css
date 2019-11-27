@@ -351,7 +351,7 @@ body {
   margin: 0 !important;
   padding: 0;
   background-color: #cfcbc8;
-  line-height: 1.5; }
+  line-height: 1.45; }
 
 .gmp_map_opts,
 .gmpMapDetailsContainer,
@@ -530,7 +530,9 @@ img {
   .form__checkbox {
     width: 32px;
     height: 32px;
-    position: relative; }
+    background-color: #535050; }
+    .form__checkbox:checked {
+      color: #e2dfdd; }
   .form__text {
     max-width: calc(11.79487vw + 245.53846px)   ;
     margin-left: calc(1.53846vw + 18.46154px)   ; }
@@ -1100,12 +1102,12 @@ img {
       justify-content: space-around; }
 
 .security__content {
-  margin-left: calc(3.58974vw + 11.07692px)   ;
+  margin-left: calc(1.53846vw + 50.46154px)   ;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 50%; }
+  width: 60%; }
 
 .security__image {
   max-width: calc(10.25641vw + 43.07692px)   ;
@@ -1122,10 +1124,11 @@ img {
   margin-top: calc(1.28205vw + 7.38462px)   ;
   color: #f2f2f2;
   text-transform: uppercase;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  line-height: 1.3; }
 
 .security__picture {
-  margin-top: calc(7.4359vw + 1.23077px)   ; }
+  margin-top: calc(8.46154vw + -18.46154px)   ; }
 
 .solutions {
   width: 100%; }
