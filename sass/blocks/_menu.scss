@@ -1,5 +1,9 @@
 .menu {
    list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
 
    &__link {
        @extend .button;
@@ -16,5 +20,11 @@
            color: $light;
            transition: $transition;
        }
+   }
+
+   &__icon {
+       width: $gutter*2;
+       height: $gutter*2;
+       color: $slider;
    }
 }

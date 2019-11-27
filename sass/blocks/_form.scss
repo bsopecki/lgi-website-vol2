@@ -79,20 +79,9 @@
     width: 100%;
   }
 
-
-  &__checkbox {
-    width: $gutter*4;
-    height: $gutter*4;
-    background-color: $secondary;
-
-    &:checked {
-      color: $light;
-    }
-  }
-
   &__text {
     @include cssLock("max-width", 360, 1920, ($gutter_num*36, $gutter_num*59));
-    @include cssLock("margin-left", 360, 1920, ($gutter_num*3, $gutter_num*6));
+    @include cssLock("margin-left", 360, 1920, ($gutter_num*4, $gutter_num*6));
   }
 
   &__description {
@@ -123,6 +112,21 @@
       background-color: $special;
       color: $light;
       transition: $transition*1.2;
+    }
+  }
+
+  &__link {
+    @extend .article;
+
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*1.5, $gutter_num*2));
+
+    font-family: font-family(texts);
+    color: $light;
+    letter-spacing: $gutter*0.075;
+
+    &:hover {
+      color: $special;
+      transition: $transition;
     }
   }
 }

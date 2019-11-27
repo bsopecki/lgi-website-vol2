@@ -67,10 +67,9 @@
     letter-spacing: $gutter_num*0.125;
   }
 
-  &__link {
-    &:hover {
-      color: $special;
-      transition: $transition;
-    }
+  &__icon {
+    width: $gutter*3;
+    height: $gutter*3;
+    margin-top: $gutter*3;
   }
 }

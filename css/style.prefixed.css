@@ -397,15 +397,15 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title {
+.headline, .slider__counter, .values__counter, .hero__title, .thanks__title {
   font-size: calc(2.94872vw + 13.38462px)   ;
   font-weight: 400;
   font-family: "freight-text-pro"; }
@@ -421,13 +421,13 @@ img {
   font-size: calc(1.66667vw + 8px)   ;
   font-family: "freight-text-pro"; }
 
-.subtitle {
+.subtitle, .privacy__title, .thanks__content {
   font-size: calc(1.41026vw + 8.92308px)   ;
   font-weight: 600;
   font-family: "freight-text-pro";
   letter-spacing: 2px; }
 
-.text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .header .menu-item, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc {
+.text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content {
   font-size: calc(0.38462vw + 12.61538px)   ;
   font-weight: 400;
   font-family: "source-sans-pro"; }
@@ -439,7 +439,7 @@ img {
   font-weight: 400;
   font-family: "source-sans-pro"; }
 
-.article, .form__description, .header__content {
+.article, .form__description, .form__link, .header__content {
   font-size: calc(0.0641vw + 13.76923px)   ;
   font-family: "freight-text-pro";
   font-weight: 300; }
@@ -529,15 +529,9 @@ img {
     -ms-flex-pack: start;
         justify-content: flex-start;
     width: 100%; }
-  .form__checkbox {
-    width: 32px;
-    height: 32px;
-    background-color: #535050; }
-    .form__checkbox:checked {
-      color: #e2dfdd; }
   .form__text {
     max-width: calc(11.79487vw + 245.53846px)   ;
-    margin-left: calc(1.53846vw + 18.46154px)   ; }
+    margin-left: calc(1.02564vw + 28.30769px)   ; }
   .form__description {
     margin-bottom: calc(0.25641vw + 11.07692px)   ;
     font-family: "source-sans-pro";
@@ -557,6 +551,14 @@ img {
       background-color: #214577;
       color: #e2dfdd;
       transition: 0.48s; }
+  .form__link {
+    margin-bottom: calc(0.25641vw + 11.07692px)   ;
+    font-family: "source-sans-pro";
+    color: #e2dfdd;
+    letter-spacing: 0.6px; }
+    .form__link:hover {
+      color: #214577;
+      transition: 0.4s; }
 
 .map__content {
   height: calc(25.64103vw + 147.69231px)   ;
@@ -779,7 +781,14 @@ img {
     left: 47%; }
 
 .menu {
-  list-style: none; }
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%; }
   .menu__link {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -790,6 +799,10 @@ img {
     .menu__link:hover {
       color: #e2dfdd;
       transition: 0.4s; }
+  .menu__icon {
+    width: 16px;
+    height: 16px;
+    color: #666; }
 
 /** Layouts */
 .about-us {
@@ -892,9 +905,10 @@ img {
   .footer__authors {
     color: #535050;
     letter-spacing: 1; }
-  .footer__link:hover {
-    color: #214577;
-    transition: 0.4s; }
+  .footer__icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 24px; }
 
 .header {
   margin-bottom: calc(3.07692vw + 4.92308px)   ;
@@ -967,19 +981,15 @@ img {
   .header__logo {
     max-width: calc(6.15385vw + 41.84615px)   ;
     max-height: calc(2.5641vw + 22.76923px)   ; }
-  .header .nav {
+  .header__navigation {
     text-decoration: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end;
     -ms-flex-align: center;
-        align-items: center; }
-  .header .menu-item {
-    padding-left: calc(1.53846vw + 2.46154px)   ;
-    color: #214577;
-    text-transform: uppercase;
-    list-style: none; }
+        align-items: center;
+    width: 160px; }
 
 .hero {
   width: 100%;
@@ -1291,3 +1301,43 @@ img {
     @media (min-width: 568px) {
       .tips__desc {
         padding-top: 0; } }
+
+.privacy {
+  padding-bottom: calc(2.05128vw + 16.61538px)   ; }
+  .privacy__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .privacy__title {
+    margin-bottom: calc(1.02564vw + 20.30769px)   ;
+    padding-top: calc(1.02564vw + 12.30769px)   ;
+    color: #214577; }
+  .privacy__content {
+    margin-top: calc(1.02564vw + 12.30769px)   ;
+    margin-bottom: calc(1.02564vw + 12.30769px)   ;
+    color: #666; }
+
+.thanks {
+  height: 50vh; }
+  .thanks__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .thanks__title {
+    margin-bottom: calc(1.02564vw + 20.30769px)   ;
+    padding-top: calc(1.02564vw + 12.30769px)   ;
+    color: #214577; }
+  .thanks__content {
+    margin-top: calc(1.02564vw + 12.30769px)   ;
+    margin-bottom: calc(1.02564vw + 12.30769px)   ;
+    color: #666; }

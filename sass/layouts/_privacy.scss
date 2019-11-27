@@ -1,0 +1,28 @@
+.privacy {
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*3, $gutter_num*7));
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__title {
+        @extend .subtitle;
+
+        @include cssLock("margin-bottom", 360, 1920, ($gutter_num*3, $gutter_num*5));
+        @include cssLock("padding-top", 360, 1920, ($gutter_num*2, $gutter_num*4));
+
+        color: $special;
+    }
+
+    &__content {
+        @extend .text;
+
+        @include cssLock("margin-top", 360, 1920, ($gutter_num*2, $gutter_num*4));
+        @include cssLock("margin-bottom", 360, 1920, ($gutter_num*2, $gutter_num*4));
+
+        color: $slider;
+    }
+}

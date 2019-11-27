@@ -89,20 +89,11 @@
     @include cssLock("max-height", 360, 1920, ($gutter_num * 4, $gutter_num * 9));
   }
 
-  .nav {
+  &__navigation {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .menu-item {
-    @extend .text;
-
-    @include cssLock("padding-left", 360, 1920, ($gutter_num * 1, $gutter_num * 4));
-
-    color: $special;
-    text-transform: uppercase;
-    list-style: none;
+    width: $gutter*20;
   }
 }
