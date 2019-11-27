@@ -81,13 +81,13 @@
 
   &__text {
     @include cssLock("max-width", 360, 1920, ($gutter_num*36, $gutter_num*59));
-    @include cssLock("margin-left", 360, 1920, ($gutter_num*4, $gutter_num*6));
+    @include cssLock("margin-left", 360, 1920, ($gutter_num*2, $gutter_num*4));
   }
 
   &__description {
     @extend .article;
 
-    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*1.5, $gutter_num*2));
+    @include cssLock("margin-bottom", 360, 1920, ($gutter_num*1.5, $gutter_num*4));
 
     font-family: font-family(texts);
     color: $light;
@@ -107,6 +107,7 @@
     border: none;
     border-radius: $gutter*0.375;
     letter-spacing: $gutter*0.375;
+    text-transform: uppercase;
 
     &:hover {
       background-color: $special;
@@ -123,6 +124,7 @@
     font-family: font-family(texts);
     color: $light;
     letter-spacing: $gutter*0.075;
+    font-weight: 800;
 
     &:hover {
       color: $special;
