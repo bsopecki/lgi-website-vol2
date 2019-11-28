@@ -1071,20 +1071,23 @@ img {
     width: calc(4.6875vw + 100px)   ;
     height: calc(4.375vw + 176px)   ;
     right: calc(3.75vw + -24px)   ;
-    top: calc(22.5vw + -112px)   ;
-    background-color: #214577;
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
-            clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
-    position: fixed;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    z-index: 2; }
+    top: calc(25vw + -160px)   ;
+    display: none; }
+    @media (min-width: 1280px) {
+      .hero__contact {
+        background-color: #214577;
+        -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
+                clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
+        position: fixed;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        z-index: 2; } }
   .hero__paragraph {
     color: #e2dfdd;
     letter-spacing: 0.6px;
