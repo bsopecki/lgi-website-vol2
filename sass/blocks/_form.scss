@@ -79,6 +79,33 @@
     width: 100%;
   }
 
+  &__checkbox {
+    height: $gutter*4;
+    width: $gutter*4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: $gutter*0.625 solid $light;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: $secondary;
+    cursor: pointer;
+
+    &:checked {
+      background-color: $light;
+    }
+
+    &:checked+&__description::before {
+      content: "\2713";
+      display: block;
+      color: red;
+      position: absolute;
+      left: $gutter*0.4;
+      top: $gutter*0.5;
+    }
+  }
+
   &__text {
     @include cssLock("max-width", 360, 1920, ($gutter_num*36, $gutter_num*59));
     @include cssLock("margin-left", 360, 1920, ($gutter_num*2, $gutter_num*4));
@@ -92,6 +119,7 @@
     font-family: font-family(texts);
     color: $light;
     letter-spacing: $gutter*0.075;
+    display: block;
   }
 
   &__button {
