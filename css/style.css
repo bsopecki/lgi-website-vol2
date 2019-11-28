@@ -397,11 +397,11 @@ img {
     .container {
       width: calc(100% - 640px); } }
 
-.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .hero__paragraph, .hero__button, .button, .form :-ms-input-placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
-.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
+.headline, .slider__counter, .values__counter, .hero__title, .thanks__title, .title, .quote__sentence, .rules__title, .about-us__title, .plans__title, .security__title, .tips__title, .slider, .slider__content, .subtitle, .privacy__title, .thanks__content, .text, .rules__content, .slider__title, .about-us__slogan, .about-us__desc, .footer__data, .hero__slogan, .hero__content, .plans__slogan, .security__slogan, .solutions__title, .tips__slogan, .tips__desc, .privacy__content, .icons, .quote__author, .rules__description, .values__description, .solutions__description, .article, .form__description, .form__link, .header__content, .hero__paragraph, .hero__button, .button, .form ::placeholder, .form__button, .slider__button, .menu__link, .footer__authors, .header__button, .solutions__button, .large, .solutions__counter {
   margin: 0;
   padding: 0; }
 
@@ -439,7 +439,7 @@ img {
   font-weight: 400;
   font-family: "source-sans-pro"; }
 
-.article, .form__description, .form__link, .header__content {
+.article, .form__description, .form__link, .header__content, .hero__paragraph, .hero__button {
   font-size: calc(0.0641vw + 13.76923px)   ;
   font-family: "freight-text-pro";
   font-weight: 300; }
@@ -1067,6 +1067,50 @@ img {
       .hero__photo {
         right: -76px;
         top: 16px; } }
+  .hero__contact {
+    width: calc(4.6875vw + 100px)   ;
+    height: calc(4.375vw + 176px)   ;
+    right: calc(3.75vw + -24px)   ;
+    top: calc(22.5vw + -112px)   ;
+    background-color: #214577;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 75%, 49% 94%, 0% 75%, 0 0);
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    z-index: 2; }
+  .hero__paragraph {
+    color: #e2dfdd;
+    letter-spacing: 0.6px;
+    font-family: "source-sans-pro";
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 70%;
+    margin-top: 8px; }
+  .hero__button {
+    padding-left: calc(0.625vw + 24px)   ;
+    padding-right: calc(0.625vw + 24px)   ;
+    padding-top: calc(0.75vw + -4.8px)   ;
+    padding-bottom: calc(0.75vw + -4.8px)   ;
+    font-family: "source-sans-pro";
+    background-color: #fff;
+    color: #214577;
+    text-transform: uppercase;
+    border: none;
+    scroll-padding-bottom: 9.6px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-top: 8px; }
+    .hero__button:hover {
+      color: #fff;
+      background-color: #666;
+      transition: 0.3s; }
   .hero__logo {
     width: calc(17.5vw + 40px)   ;
     height: auto; }
