@@ -72,4 +72,12 @@
     height: $gutter*6;
     margin-top: $gutter*3;
   }
+
+  &__link {
+    &:hover {
+      color: $special;
+      transition: $transition;
+      font-weight: 800;
+    }
+  }
 }
