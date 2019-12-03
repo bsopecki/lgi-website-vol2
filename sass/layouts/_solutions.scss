@@ -46,23 +46,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     position: relative;
     text-align: center;
+    margin-top: $gutter*2.5;
+
+    @include media(ml) {
+      margin-top: 0;
+    }
 
     @include media(xs) {
       width: 50%;
     }
   }
 
-  &__icon {
+  &__photo {
     @include cssLock("width", 360, 1920, ($gutter_num*12, $gutter_num*22));
-    @include cssLock("height", 360, 1920, ($gutter_num*22, $gutter_num*35));
+    @include cssLock("height", 360, 1920, ($gutter_num*18, $gutter_num*28));
+
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
   }
 
   &__counter {
     @extend .large;
 
-    @include cssLock("top", 360, 1920, ($gutter_num*10, $gutter_num*17));
+    @include cssLock("top", 360, 1920, ($gutter_num*4, $gutter_num*6));
 
     position: absolute;
     color: $secondary;

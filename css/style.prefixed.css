@@ -384,7 +384,7 @@ img {
   @media (min-width: 992px) {
     .container {
       width: calc(100% - 96px); } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     .container {
       width: calc(100% - 144px); } }
   @media (min-width: 1440px) {
@@ -517,7 +517,7 @@ img {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center; }
-    @media (min-width: 1024px) {
+    @media (min-width: 992px) {
       .form__confirm {
         -ms-flex-direction: row;
             flex-direction: row;
@@ -541,7 +541,7 @@ img {
     transition-duration: 0.3s;
     background-color: #535050;
     cursor: pointer; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .form__checkbox {
         border: 5px solid #e2dfdd; } }
     .form__checkbox:checked {
@@ -574,7 +574,7 @@ img {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 28px; }
-    @media (min-width: 1024px) {
+    @media (min-width: 992px) {
       .form__button {
         margin-top: 0; } }
     .form__button:hover {
@@ -824,7 +824,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #214577; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .menu__link {
         pointer-events: initial; } }
     .menu__link:hover {
@@ -850,13 +850,13 @@ img {
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .about-us__wrapper {
         -ms-flex-direction: row;
             flex-direction: row; } }
   .about-us__content {
     width: 100%; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .about-us__content {
         width: 50%;
         padding-right: 10%; } }
@@ -880,7 +880,7 @@ img {
         flex-direction: column;
     -ms-flex-align: end;
         align-items: flex-end; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .about-us__description {
         width: 50%; } }
 
@@ -973,7 +973,7 @@ img {
   .header__privacy {
     font-weight: 800;
     letter-spacing: 0.7px; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .header__privacy {
         pointer-events: initial; } }
     .header__privacy:hover {
@@ -996,7 +996,7 @@ img {
         width: 72px;
         height: 32px;
         font-size: 20px; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .header__button {
         pointer-events: initial;
         cursor: pointer; } }
@@ -1058,7 +1058,7 @@ img {
       .hero__photo {
         top: 88px;
         right: -32px; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .hero__photo {
         top: 22px;
         right: -32px; } }
@@ -1134,7 +1134,7 @@ img {
     @media (min-width: 992px) {
       .hero__logo {
         width: 360px; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .hero__logo {
         width: 520px; } }
     @media (min-width: 1921px) {
@@ -1257,7 +1257,7 @@ img {
             flex-wrap: wrap;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .solutions__stats {
         -ms-flex-direction: row;
             flex-direction: row;
@@ -1272,16 +1272,30 @@ img {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    margin-top: 20px; }
+    @media (min-width: 1280px) {
+      .solutions__item {
+        margin-top: 0; } }
     @media (min-width: 568px) {
       .solutions__item {
         width: 50%; } }
-  .solutions__icon {
+  .solutions__photo {
     width: calc(5.12821vw + 77.53846px)   ;
-    height: calc(6.66667vw + 152px)   ; }
+    height: calc(5.12821vw + 125.53846px)   ;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    position: relative; }
+  .solutions__icon {
+    position: absolute;
+    top: 0; }
   .solutions__counter {
-    top: calc(3.58974vw + 67.07692px)   ;
+    top: calc(1.02564vw + 28.30769px)   ;
     position: absolute;
     color: #535050;
     letter-spacing: 6px; }
