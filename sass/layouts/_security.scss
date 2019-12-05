@@ -45,6 +45,12 @@
   }
 
   &__picture {
-    @include cssLock("margin-top", 360, 1920, ($gutter_num*1.5, $gutter_num*18));
+    margin-top: calc(8.46154vw + -18.46154px);
+    background-attachment: fixed;
+    background-image: url('../../images/Image1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
   }
 }

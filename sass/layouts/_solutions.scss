@@ -1,5 +1,11 @@
 .solutions {
   width: 100%;
+  background-attachment: fixed;
+  background-image: url('../../images/Image2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
 
   &__wrapper {
     width: 100%;
