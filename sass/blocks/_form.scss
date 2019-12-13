@@ -57,6 +57,7 @@
 
     color: $light;
     font-weight: 400;
+    letter-spacing: $gutter*0.08;
   }
 
   &__confirm {
@@ -80,9 +81,6 @@
   }
 
   &__checkbox {
-    @include cssLock("width", 360, 1920, ($gutter_num*3, $gutter_num*4));
-    @include cssLock("height", 360, 1920, ($gutter_num*3, $gutter_num*4));
-
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -92,6 +90,8 @@
     transition-duration: 0.3s;
     background-color: $secondary;
     cursor: pointer;
+    width: $gutter*4;
+    height: $gutter*4;
 
     @include media(lg) {
       border: $gutter*0.625 solid $light;
@@ -113,7 +113,7 @@
 
   &__text {
     @include cssLock("max-width", 360, 1920, ($gutter_num*36, $gutter_num*59));
-    @include cssLock("margin-left", 360, 1920, ($gutter_num*0.5, $gutter_num*3));
+    @include cssLock("margin-left", 360, 1920, ($gutter_num*0.75, $gutter_num*3.5));
   }
 
   &__description {

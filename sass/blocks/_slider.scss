@@ -52,10 +52,10 @@
   &__button {
     @extend .button;
 
-    @include cssLock("padding-top", 360, 1920, ($gutter_num*0.65, $gutter_num*1));
-    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*0.65, $gutter_num*1));
-    @include cssLock("padding-left", 360, 1920, ($gutter_num*0.65, $gutter_num*2));
-    @include cssLock("padding-right", 360, 1920, ($gutter_num*0.65, $gutter_num*2));
+    @include cssLock("padding-top", 360, 1920, ($gutter_num*1, $gutter_num*1));
+    @include cssLock("padding-bottom", 360, 1920, ($gutter_num*1, $gutter_num*1));
+    @include cssLock("padding-left", 360, 1920, ($gutter_num*2, $gutter_num*3.25));
+    @include cssLock("padding-right", 360, 1920, ($gutter_num*2, $gutter_num*3.25));
 
     background-color: $secondary;
     color: $light;
@@ -63,6 +63,8 @@
     text-transform: uppercase;
     margin: 0 auto;
     letter-spacing: $gutter*0.5;
+    border-radius: $gutter*0.375;
+    font-weight: 700;
 
     &:hover {
       background-color: $special;
@@ -91,6 +93,7 @@
   .flickity-prev-next-button.previous {
     left: $gutter*-4.5;
   }
+
   .flickity-prev-next-button.next {
     right: $gutter*-4.5;
   }

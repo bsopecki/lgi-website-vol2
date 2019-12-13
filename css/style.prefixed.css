@@ -503,10 +503,12 @@ img {
       height: calc(3.58974vw + 51.07692px)   ; }
   .form :-ms-input-placeholder {
     color: #e2dfdd;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 0.64px; }
   .form ::placeholder {
     color: #e2dfdd;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 0.64px; }
   .form__confirm {
     margin-top: calc(4.10256vw + 9.23077px)   ;
     display: -ms-flexbox;
@@ -530,8 +532,6 @@ img {
         justify-content: flex-start;
     width: 100%; }
   .form__checkbox {
-    width: calc(0.51282vw + 22.15385px)   ;
-    height: calc(0.51282vw + 22.15385px)   ;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -540,7 +540,9 @@ img {
     outline: none;
     transition-duration: 0.3s;
     background-color: #535050;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 32px;
+    height: 32px; }
     @media (min-width: 1025px) {
       .form__checkbox {
         border: 5px solid #e2dfdd; } }
@@ -555,7 +557,7 @@ img {
       top: 4px; }
   .form__text {
     max-width: calc(11.79487vw + 245.53846px)   ;
-    margin-left: calc(1.28205vw + -0.61538px)   ; }
+    margin-left: calc(1.41026vw + 0.92308px)   ; }
   .form__description {
     margin-bottom: calc(1.28205vw + 7.38462px)   ;
     font-family: "source-sans-pro";
@@ -734,16 +736,18 @@ img {
     max-width: 90%;
     margin: 0 auto; }
   .slider__button {
-    padding-top: calc(0.17949vw + 4.55385px)   ;
-    padding-bottom: calc(0.17949vw + 4.55385px)   ;
-    padding-left: calc(0.69231vw + 2.70769px)   ;
-    padding-right: calc(0.69231vw + 2.70769px)   ;
+    padding-top: 8px   ;
+    padding-bottom: 8px   ;
+    padding-left: calc(0.64103vw + 13.69231px)   ;
+    padding-right: calc(0.64103vw + 13.69231px)   ;
     background-color: #535050;
     color: #e2dfdd;
     border: none;
     text-transform: uppercase;
     margin: 0 auto;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    border-radius: 3px;
+    font-weight: 700; }
     .slider__button:hover {
       background-color: #214577;
       color: #f2f2f2;
@@ -1106,10 +1110,11 @@ img {
     padding-top: 8px;
     padding-bottom: 8px;
     max-width: 70%;
-    margin-top: 8px; }
+    margin-top: 8px;
+    font-weight: unset; }
   .hero__button {
-    padding-left: calc(0.625vw + 24px)   ;
-    padding-right: calc(0.625vw + 24px)   ;
+    padding-left: calc(0.625vw + 8px)   ;
+    padding-right: calc(0.625vw + 8px)   ;
     padding-top: calc(0.75vw + -4.8px)   ;
     padding-bottom: calc(0.75vw + -4.8px)   ;
     font-family: "source-sans-pro";
@@ -1117,6 +1122,7 @@ img {
     color: #214577;
     text-transform: uppercase;
     border: none;
+    border-radius: 3px;
     scroll-padding-bottom: 9.6px;
     letter-spacing: 3px;
     font-weight: 800;
